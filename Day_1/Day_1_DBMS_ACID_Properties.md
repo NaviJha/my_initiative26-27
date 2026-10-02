@@ -70,6 +70,7 @@ Consider a banking transaction where Account A (initial balance: $2,000) transfe
 ### 1. Atomicity — “All or Nothing”
 
 **Definition:** A transaction must either execute completely or have no effect. If a failure occurs before commit, the DBMS uses recovery mechanisms to undo incomplete work.
+A failed transaction can not be resumed it will always be restart.
 
 **Key idea:** A transaction is not allowed to leave only some of its intended changes in the database.
 
